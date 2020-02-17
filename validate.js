@@ -2,7 +2,7 @@
  * 验证码验证逻辑
  * @author Zakelly
  */
-var url = "http://elective.pku.edu.cn/elective2008/edu/pku/stu/elective/controller/supplement/validate.do?validCode=";
+var url = "https://elective.pku.edu.cn/elective2008/edu/pku/stu/elective/controller/supplement/validate.do?validCode=";
 /**
  * 验证验证码是否正确
  * @param code {string} 验证码

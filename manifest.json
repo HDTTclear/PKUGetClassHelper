@@ -8,8 +8,8 @@
 		"include_globs": [  ],
 		"js": ["libs/tesseract/tesseract.js", "libs/morph.js", "libs/jquery.js", "libs/notify.js", "bootstrap.min.js", "map.js", "course.js",  "eventHandler.js", "elect.js", "validate.js" ,"server.js", "limit.js", "captcha.js", "ui.js", "localStorageManager.js" ],
 		"css": [ "bootstrap.min.css", "style.css" ],
-		"matches": [ "http://elective.pku.edu.cn/elective2008/edu/pku/stu/elective/controller/supplement/SupplyAndCancel.do*","http://elective.pku.edu.cn/elective2008/edu/pku/stu/elective/controller/supplement/SupplyCancel.do*" ,"http://elective.pku.edu.cn/elective2008/edu/pku/stu/elective/controller/supplement/electSupplement.do*",
-		"http://elective.pku.edu.cn/elective2008/edu/pku/stu/elective/controller/supplement/supplement.jsp*","http://elective.pku.edu.cn/elective2008/edu/pku/stu/elective/controller/supplement/cancelCourse.do*"],
+		"matches": [ "https://elective.pku.edu.cn/elective2008/edu/pku/stu/elective/controller/supplement/SupplyAndCancel.do*","https://elective.pku.edu.cn/elective2008/edu/pku/stu/elective/controller/supplement/SupplyCancel.do*" ,"https://elective.pku.edu.cn/elective2008/edu/pku/stu/elective/controller/supplement/electSupplement.do*",
+		"https://elective.pku.edu.cn/elective2008/edu/pku/stu/elective/controller/supplement/supplement.jsp*","https://elective.pku.edu.cn/elective2008/edu/pku/stu/elective/controller/supplement/cancelCourse.do*"],
 		"run_at": "document_idle"
 	} ,
 	{
@@ -18,7 +18,7 @@
 		"exclude_matches": [  ],
 		"include_globs": [  ],
 		"js": [ "libs/jquery.js" ],
-		"matches": [ "http://elective.pku.edu.cn/elective2008/*" ],
+		"matches": [ "https://elective.pku.edu.cn/elective2008/*" ],
 		"run_at": "document_idle"
 	}
 	],
@@ -36,7 +36,7 @@
 		"128": "icons/icon_128.png",
 		"64": "icons/icon_64.png"
 	},
-	"permissions": [ "notifications", "http://elective.pku.edu.cn/",  "http://api.zakelly.com/getclasshelper/", "http://www.zakelly.com/" ,"webRequest","webRequestBlocking"],
+	"permissions": [ "notifications", "https://elective.pku.edu.cn/",  "http://api.zakelly.com/getclasshelper/", "http://www.zakelly.com/" ,"webRequest","webRequestBlocking"],
   "web_accessible_resources": ["resources/mando-5.mp3","panel.html","icons/icon_256.png", "libs/tesseract/worker.js", "libs/tesseract/index-core.js"],
   "background": {
 	"page": "background.html"

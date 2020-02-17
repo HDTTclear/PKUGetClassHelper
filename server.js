@@ -4,7 +4,7 @@
  */
 
 var VERSION = 2018092301;
-var VERSION_STR = "2.3.1";
+var VERSION_STR = "2.4.0";
 var URL_VERSION = 'http://api.zakelly.com/getclasshelper/version';
 var sound = null;
 
@@ -22,6 +22,7 @@ function getVersion() {
  * @param show {boolean} 已经为最新时是否弹出桌面通知
  */
 function checkUpdate(show) {
+    /*
     jQuery.ajax({
         type: "GET",
         url: URL_VERSION,
@@ -47,6 +48,7 @@ function checkUpdate(show) {
             }
         }
     });
+    */
 }
 
 /**
@@ -59,7 +61,7 @@ function checkUpdate(show) {
 function desktopNotify(icon, title, body, clickFunc) {
     try{
         var n = new Notification(title, {
-            'icon':'http://elective.pku.edu.cn/elective2008/resources/images/'+icon+'.gif',  // icon url - can be relative
+            'icon':'https://elective.pku.edu.cn/elective2008/resources/images/'+icon+'.gif',  // icon url - can be relative
             'body':body  // notification body text
         });
         n.onclick = clickFunc;

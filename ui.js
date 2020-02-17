@@ -28,7 +28,7 @@
 
         // 获得从id开始的下coursesPerPage个课程
         function GetNext(id, retry) {
-            $.get("http://elective.pku.edu.cn/elective2008/edu/pku/stu/elective/controller/supplement/supplement.jsp?netui_row=electableListGrid%3B" + id, function (html) {
+            $.get("https://elective.pku.edu.cn/elective2008/edu/pku/stu/elective/controller/supplement/supplement.jsp?netui_row=electableListGrid%3B" + id, function (html) {
                 if (!html)
                     if (retry)
                         return setTimeout(GetNext, 500, fromid, retry);
@@ -159,7 +159,7 @@
                 };
                 eventHandler.electError = function (course, err) {
                     //不用刷新验证码
-                    //document.getElementById('imgname').src = "http://elective.pku.edu.cn/elective2008/DrawServlet?Rand=" + Math.random();
+                    //document.getElementById('imgname').src = "https://elective.pku.edu.cn/elective2008/DrawServlet?Rand=" + Math.random();
                     controls.sStatus.removeClass().addClass("statustext-error").text("【请尽快填入验证码重试】试图选课“" + course.name + "”时遇到错误：" + err);
                     desktopNotify('error', '选课失败', "试图选课“" + course.name + "”时遇到错误：" + err, null);
                 };
@@ -207,9 +207,9 @@
                 eventHandler.detectCaptchaSuccess = function () {
                 }
 
-                controls.imgname.attr("src", "http://elective.pku.edu.cn/elective2008/DrawServlet?Rand=" + Math.random())
+                controls.imgname.attr("src", "https://elective.pku.edu.cn/elective2008/DrawServlet?Rand=" + Math.random())
                     .click(function () {
-                        this.src = "http://elective.pku.edu.cn/elective2008/DrawServlet?Rand=" + Math.random();
+                        this.src = "https://elective.pku.edu.cn/elective2008/DrawServlet?Rand=" + Math.random();
                     }).css("cursor", "pointer");
 
                 // 绑定事件及逻辑
